@@ -41,6 +41,7 @@
             // 
             // dataGridView1
             // 
+            this.dataGridView1.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridView1.Location = new System.Drawing.Point(23, 195);
             this.dataGridView1.Name = "dataGridView1";
@@ -49,35 +50,38 @@
             // 
             // btn_insert
             // 
-            this.btn_insert.Location = new System.Drawing.Point(43, 37);
+            this.btn_insert.Location = new System.Drawing.Point(43, 34);
             this.btn_insert.Name = "btn_insert";
             this.btn_insert.Size = new System.Drawing.Size(75, 23);
             this.btn_insert.TabIndex = 1;
             this.btn_insert.Text = "INSERT";
             this.btn_insert.UseVisualStyleBackColor = true;
+            this.btn_insert.Click += new System.EventHandler(this.btn_insert_Click);
             // 
             // btn_delete
             // 
-            this.btn_delete.Location = new System.Drawing.Point(124, 36);
+            this.btn_delete.Location = new System.Drawing.Point(134, 34);
             this.btn_delete.Name = "btn_delete";
             this.btn_delete.Size = new System.Drawing.Size(75, 23);
             this.btn_delete.TabIndex = 1;
             this.btn_delete.Text = "DELETE";
             this.btn_delete.UseVisualStyleBackColor = true;
+            this.btn_delete.Click += new System.EventHandler(this.btn_delete_Click);
             // 
             // btn_update
             // 
-            this.btn_update.Location = new System.Drawing.Point(205, 36);
+            this.btn_update.Location = new System.Drawing.Point(226, 34);
             this.btn_update.Name = "btn_update";
             this.btn_update.Size = new System.Drawing.Size(75, 23);
             this.btn_update.TabIndex = 1;
             this.btn_update.Text = "UPDATE";
             this.btn_update.UseVisualStyleBackColor = true;
+            this.btn_update.Click += new System.EventHandler(this.btn_update_Click);
             // 
             // comboBox1
             // 
             this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Location = new System.Drawing.Point(450, 38);
+            this.comboBox1.Location = new System.Drawing.Point(331, 36);
             this.comboBox1.Name = "comboBox1";
             this.comboBox1.Size = new System.Drawing.Size(284, 21);
             this.comboBox1.TabIndex = 2;
@@ -85,16 +89,17 @@
             // 
             // btn_show
             // 
-            this.btn_show.Location = new System.Drawing.Point(286, 36);
+            this.btn_show.Location = new System.Drawing.Point(631, 36);
             this.btn_show.Name = "btn_show";
             this.btn_show.Size = new System.Drawing.Size(75, 23);
             this.btn_show.TabIndex = 3;
-            this.btn_show.Text = "SHOW";
+            this.btn_show.Text = "SHOW DB";
             this.btn_show.UseVisualStyleBackColor = true;
             this.btn_show.Click += new System.EventHandler(this.btn_show_Click);
             // 
             // textBox_provider
             // 
+            this.textBox_provider.Enabled = false;
             this.textBox_provider.Location = new System.Drawing.Point(113, 101);
             this.textBox_provider.Name = "textBox_provider";
             this.textBox_provider.Size = new System.Drawing.Size(660, 20);
